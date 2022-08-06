@@ -1,19 +1,32 @@
 {
-  "name": "threejs-demo",
+  "name": "sparrowjs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage",
+    "test-live": "cross-env DEBUG_MODE=1 jest --coverage",
+    "lint": "eslint --fix"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gezoo/threejs-demo.git"
+    "url": "git+https://github.com/gezoo/sparrowjs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gezoo/threejs-demo/issues"
+    "url": "https://github.com/gezoo/sparrowjs/issues"
   },
-  "homepage": "https://github.com/gezoo/threejs-demo#readme"
+  "homepage": "https://github.com/gezoo/sparrowjs#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^26.0.1",
+    "jest-electron": "^0.1.12"
+  }
 }
